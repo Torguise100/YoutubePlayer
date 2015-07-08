@@ -1,0 +1,17 @@
+php_flag expose_php off
+php_flag magic_quotes_gpc off
+
+Options -MultiViews
+
+RewriteEngine on
+AddType application/vnd.unity unity3d
+
+# Need a trailing slash on app pages.
+#RewriteCond %{REQUEST_URI} ^(track)|(admin)$
+#RewriteRule .* %{REQUEST_URI}/ [R=301,L]
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
