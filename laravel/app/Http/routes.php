@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{data?}', function(){
+    return View::make('ember');
+});
+
+Route::group(array('prefix' => 'api'), function(){
+
+    Route::resource( 'playlists', 'YoutubeController');
+
 });

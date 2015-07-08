@@ -1,0 +1,31 @@
+{
+  "name": "youtubeplayer",
+  "version": "1.0.0",
+  "description": "Youtube Player in Ember and laravel using iframe API",
+  "main": "index.php",
+  "dependencies": {
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlbars": "^0.4.0",
+    "gulp-tap": "^0.1.3",
+    "require-dir": "^0.3.0",
+    "through2": "^2.0.0",
+    "vinyl-transform": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torguise100/YoutubePlayer.git"
+  },
+  "author": "Dan torguise100@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Torguise100/YoutubePlayer/issues"
+  },
+  "homepage": "https://github.com/Torguise100/YoutubePlayer#readme"
+}
