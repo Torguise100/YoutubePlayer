@@ -5,7 +5,7 @@ This package is just an example case project of using the iframe API with Ember 
 not a package that is installed into an existing project.
 In order to set up this project you will require Node.js Package Manager, Bower and Composer to install all the dependencies.
 
-# Installation
+## Installation
 
 First you will need to clone this project into your project directory. This example was developed using xampp so the
 projects directory is: `C:/xampp/htdocs/`.
