@@ -39,9 +39,7 @@ To use this youtube player inside your own projects you will need to do the foll
 
 1. Firstly make sure you have all the dependencies required for the youtube player project inside of your own project, this means the node modules, bower components. To access the Youtube Data API make sure you have the line: `"alaouy/youtube": "dev-master"` under require in your laravel composer.json file.
 2. Once the dependencies are installed go into laravel and run the following command: 
- 
   `php artisan vendor:publish`
-
 This command will add the config files from the alaouy/youtube dependency into your project.
 
 3. You will need an API key to access the Youtube Data API, one can be aquired by creating a project on: https://console.developers.google.com. If you already have one skip to step 6.
@@ -51,6 +49,7 @@ This command will add the config files from the alaouy/youtube dependency into y
 5. Once the API is enabled go into the 'credentials' and create a public access key which will generate an the API key.
 
 6. In the laravel/config folder you should have a 'youtube.php' file, open this up and set the 'KEY' value to the API key from your google developers application.
+
 
 7. Copy the YoutubeController from this project into your own controllers file in the laravel controllers folder, and add it to your laravel routes. You will need to run `composer dump-autoload` to make sure the contoller is added to your project correctly. 
  
