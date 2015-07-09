@@ -43,10 +43,15 @@ To use this youtube player inside your own projects you will need to do the foll
   `php artisan vendor:publish`
 
 This command will add the config files from the alaouy/youtube dependency into your project.
+
 3. You will need an API key to access the Youtube Data API, one can be aquired by creating a project on: https://console.developers.google.com. If you already have one skip to step 6.
+
 4. Once created go into the 'APIs & auth' tab (on the left) and then 'API'. Click on the Youtube Data API and then on the 'Enable API' button.
+
 5. Once the API is enabled go into the 'credentials' and create a public access key which will generate an the API key.
+
 6. In the laravel/config folder you should have a 'youtube.php' file, open this up and set the 'KEY' value to the API key from your google developers application.
+
 7. Copy the YoutubeController from this project into your own controllers file in the laravel controllers folder, and add it to your laravel routes. You will need to run `composer dump-autoload` to make sure the contoller is added to your project correctly. 
  
 This completes the laravel implementation.
@@ -60,7 +65,9 @@ The side is the what creates the player and loads the playlist into the player.
 if you do not wish to access the Youtube API to get playlist data such as the number of videos you will not need to do the following steps.
 
 2. Copy the index.js model into the route of the page that you wish to contain your youtube player.
+
 3. inside of the page's template add a div with the id 'player', this may be changed as long as you change first parameter of the YT.player function to the same.
+
 4. run the application, this should now start the playlist from the last video.
 
 For those wishing to just create a player by code please change the index value in load playlist to the index which you wish your playlist to start from. If you wish to start from the beginning, set the index to 0.
